@@ -19,7 +19,7 @@
           <img src="./assets/icons/github.svg" alt="GitHub" class="w-6 h-6">
         </a>
       </div>
-      <p>&copy; 2024 Caio Dias. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Caio Dias</p>
     </footer>
   </div>
 </template>
