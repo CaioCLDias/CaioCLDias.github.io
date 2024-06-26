@@ -36,7 +36,7 @@
       "type": "personal"
     },
     {
-      "name": "Concexão SSH Tunel",
+      "name": "Conexão SSH Tunel",
       "description": "Script em python para realizar conexão com banco utilizando um tunel SSH",
       "url": "https://github.com/CaioCLDias/ssh_thunel",
       "type": "personal"
