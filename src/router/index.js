@@ -4,9 +4,9 @@ import AboutPage from '../views/AboutPage.vue';
 import ProjectsPage from '../views/ProjectsPage.vue';
 
 const routes = [
-  { path: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
-  { path: '/projects', component: ProjectsPage }
+  { path: '/', name: 'HomePage', component: HomePage },
+  { path: '/about', name: 'AboutPage', component: AboutPage },
+  { path: '/projects', name: 'ProjectsPage', component: ProjectsPage }
 ];
 
 const router = createRouter({
