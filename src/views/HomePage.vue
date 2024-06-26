@@ -3,7 +3,7 @@
     <div class="text-center mt-12 flex items-center justify-center">
       <div class="text-left max-w-xl">
         <h1 class="text-5xl font-bold mb-4">Oi! Eu sou o Caio</h1>
-        <p class="text-xl mb-8">É um prazer te receber em minha página, então, sou desenvolvedor Backend com conhecimentos na linguagem PHP, Python e Node. Atualamente estou trabalhando como Tech Lead. </p>
+        <p class="text-xl mb-8">É um prazer te receber em minha página, então, sou desenvolvedor Backend com conhecimentos na linguagem PHP, Python e Node. Atualmente estou trabalhando como Tech Lead. </p>
       </div>
       <img src="../assets/images/avatar.png" alt="Avatar" class="w-60 h-60 rounded-full ml-8">
     </div>

@@ -7,19 +7,19 @@
     },
     {
       "name": "Nimbus",
-      "description": "Gerenciar servidores, equipamento de redes e automatizar tarefas e funções que rodam no mesmo ",
+      "description": "Gerenciar servidores, equipamento de redes",
       "url": "https://nimbus.webby.app.br/auth/login",
       "type": "work"
     },
     {
       "name": "Auth Service",
-      "description": "Microserviço desenvolvido para gerenciar autenticações e autorizações no sistema. O Auth-Service publica eventos de login no RabbitMQ, permitindo que outros serviços do ecossistema possam reagir a esses eventos.",
+      "description": "Microserviço para autenticações e autorizações no sistema, publica eventos de login no RabbitMQ, permitindo que outros serviços do ecossistema possam consumir a esses eventos.",
       "url": "https://github.com/CaioCLDias/auth-service",
       "type": "personal"
     },
     {
       "name": "Notification Service",
-      "description": "Microserviço dedicado ao envio de notificações. Ele escuta eventos publicados no RabbitMQ e envia notificações apropriadas",
+      "description": "Microserviço dedicado ao envio de notificações. Ele consome eventos publicados no RabbitMQ e envia notificações apropriadas",
       "url": "https://github.com/CaioCLDias/notification-service",
       "type": "personal"
     },
