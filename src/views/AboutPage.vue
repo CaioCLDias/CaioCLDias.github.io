@@ -10,7 +10,7 @@
 <script>
 export default {
   name: 'AboutPage',
-  title: 'Caio Dias - About'
+  title: 'Caio Dias | About'
 }
 </script>
 
