@@ -3,7 +3,7 @@
     <section v-for="(section, index) in sections" :key="index" class="mb-12">
       <h2 :class="index === 0 ? 'text-4xl font-bold mb-4' : 'text-3xl font-bold mb-4'">{{ section.title }}</h2>
       <hr v-if="index !== 0" class="my-4 border-gray-700">
-      <p class="text-lg">{{ section.text }}</p>
+      <div v-html="formatText(section.text)"></div>
     </section>
   </div>
 </template>
@@ -18,15 +18,20 @@ export default {
       sections: aboutSections
     };
   },
+  methods: {
+    formatText(text) {
+      return text.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+    }
+  },
   title: 'Caio Dias | About'
 }
 </script>
 
 <style scoped>
 .about-page {
-  text-align: left; /* Alinha o texto à esquerda */
-  max-width: 40rem; /* Estreita a largura máxima do conteúdo */
-  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  text-align: left;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 hr {
@@ -34,16 +39,16 @@ hr {
 }
 
 h1 {
-  font-size: 2.5rem; /* Maior que os outros títulos */
-  color: #ffffff; /* Cor branca para o título principal */
+  font-size: 2.5rem;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 2rem;
-  color: #e0e0e0; /* Cor ligeiramente mais clara para os subtítulos */
+  color: #e0e0e0;
 }
 
 p {
-  color: #b0b0b0; /* Texto ligeiramente mais claro */
+  color: #b0b0b0;
 }
 </style>

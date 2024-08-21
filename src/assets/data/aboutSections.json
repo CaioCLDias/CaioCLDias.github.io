@@ -1,15 +1,14 @@
 [
-    {
-      "title": "Sobre Mim",
-      "text": "Olá! Sou Caio Dias, desenvolvedor backend com uma paixão por tecnologia e um amor pela resolução de problemas complexos. Tenho uma vasta experiência em PHP, Python e Node.js."
-    },
-    {
-      "title": "Profissional",
-      "text": "Minha jornada na TI começou há X anos. Trabalhei em diversas empresas e projetos, onde desenvolvi habilidades avançadas em desenvolvimento backend. Atualmente, sou Tech Lead e adoro liderar equipes para criar soluções inovadoras e eficientes."
-    },
-    {
-      "title": "Pessoal",
-      "text": "Fora do trabalho, gosto de jogar DOTA 2, explorar novas tecnologias e ler sobre história. Meu interesse por jogos não só me diverte, mas também me inspira a pensar de forma estratégica e criativa em minhas soluções de software."
-    }
-  ]
-  
+  {
+    "title": "Sobre Mim",
+    "text": "Olá! Sou Caio Dias, desenvolvedor backend com uma paixão por tecnologia e pela resolução de problemas complexos. Sou formado em Análise e Desenvolvimento de Sistemas pela FATEC Ourinhos, SP.\n\nMinha linguagem de programação preferida é PHP (não me julguem! kkkk). Brincadeiras à parte, é a linguagem na qual tenho mais domínio e experiência. Tenho grande interesse por robótica e astronomia, e meu principal hobby é curtir uma gameplay."
+  },
+  {
+    "title": "Profissional",
+    "text": "Desde a adolescência, eu sabia que queria trabalhar com TI. Sempre tive muita facilidade com computadores e percebi que aprendia as coisas muito rápido, além de gostar de explorar e descobrir como as coisas funcionavam por conta própria. Desde cedo, aos 13 anos, já formatava computadores e configurava roteadores, embora na época eu pensasse que trabalhar com TI era ser técnico de informática kkkk.\n\nQuando chegou a hora de escolher um curso no ensino médio, optei por um curso técnico de programação de sistemas, que fiz juntamente com o ensino médio. Fiz o curso em Portugal, onde morei boa parte da minha adolescência. Foi nesse curso que tive meu primeiro contato com programação. Lembro até hoje da primeira aula, quando o professor nos deu uma prova teórica para avaliar nosso nível de conhecimento em TI. Havia uma pergunta sobre quais linguagens de programação conhecíamos, e eu, obviamente, respondi HTML! Brincadeira, na verdade, deixei em branco porque nem sabia da existência do HTML na época.\n\nFoi nesse curso que tive contato com programação e TI de um modo geral, aprendendo linguagens como Portugol, C, Visual Basic, C#, além de bancos de dados como Access e MySQL."
+  },
+  {
+    "title": "Pessoal",
+    "text": "Fora do trabalho, gosto de jogar DOTA 2, explorar novas tecnologias e ler sobre história. Meu interesse por jogos não só me diverte, mas também me inspira a pensar de forma estratégica e criativa em minhas soluções de software."
+  }
+]
