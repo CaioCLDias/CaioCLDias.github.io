@@ -1,13 +1,6 @@
 [
     {
-      "year": "2010",
-      "title": "Curso Técnico",
-      "institution": "Instituto XYZ, Portugal",
-      "description": "Primeiro contato com programação. Estágio não remunerado em PHP."
-    },
-    {
-      "year": "2013",
-      "title": "Faculdade de ADS",
+      "title": "Analise e Desenvolvimento de Sistrmas",
       "institution": "FATEC Ourinhos, SP",
       "description": "Início da faculdade. Introdução a novos conceitos e aprimoramento teórico."
     }

@@ -7,25 +7,36 @@
     <div v-else>
       <p>Carregando informações...</p>
     </div>
-    <!-- Timeline de Experiências Profissionais e Acadêmicas -->
+
+    <!-- Timeline de Experiências Profissionais -->
     <h1 class="text-4xl font-bold mb-8 mt-12">Minha Trajetória Profissional</h1>
     <div v-if="professional.length > 0" class="timeline">
       <div v-for="(item, index) in professional" :key="index" class="timeline-item">
         <div class="timeline-content">
-          <h2 class="text-2xl font-bold">{{ item.year }}</h2>
-          <h3 class="text-xl">{{ item.title }}</h3>
-          <p class="text-sm text-gray-600">{{ item.company }}</p>
+          <h2 class="text-2xl font-bold">{{ item.title }}</h2>
+          <p class="text-lg">{{ item.company }}</p>
+          <p class="text-sm text-gray-600">
+            {{ item.startMonth }} {{ item.startYear }} - 
+            <span v-if="item.endYear">{{ item.endMonth }} {{ item.endYear }}</span>
+            <span v-else>{{ item.endMonth }}</span>
+          </p>
           <p class="text-lg">{{ item.description }}</p>
         </div>
       </div>
     </div>
-    <h1 class="text-4xl font-bold mb-8">Minha Trajetória Acadêmica</h1>
+
+    <!-- Timeline de Experiências Acadêmicas -->
+    <h1 class="text-4xl font-bold mb-8 mt-12">Minha Trajetória Acadêmica</h1>
     <div v-if="academic.length > 0" class="timeline">
       <div v-for="(item, index) in academic" :key="index" class="timeline-item">
         <div class="timeline-content">
-          <h2 class="text-2xl font-bold">{{ item.year }}</h2>
-          <h3 class="text-xl">{{ item.title }}</h3>
-          <p class="text-sm text-gray-600">{{ item.institution }}</p>
+          <h2 class="text-2xl font-bold">{{ item.title }}</h2>
+          <p class="text-lg">{{ item.institution }}</p>
+          <p class="text-sm text-gray-600">
+            {{ item.startMonth }} {{ item.startYear }} - 
+            <span v-if="item.endYear">{{ item.endMonth }} {{ item.endYear }}</span>
+            <span v-else>{{ item.endMonth }}</span>
+          </p>
           <p class="text-lg">{{ item.description }}</p>
         </div>
       </div>
@@ -45,7 +56,7 @@ export default {
   name: 'AboutPage',
   data() {
     return {
-      text: aboutData.text, // Importando o texto completo diretamente do JSON
+      text: aboutData.text,
       professional: professionalData,
       academic: academicData
     };

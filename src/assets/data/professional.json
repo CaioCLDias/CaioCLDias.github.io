@@ -1,21 +1,65 @@
 [
-    {
-      "year": "2016",
-      "title": "Estágio em Help Desk",
-      "company": "MSI",
-      "description": "Trabalho em suporte ao cliente e desenvolvimento em Delphi."
-    },
-    {
-      "year": "2017",
-      "title": "Desenvolvedor Java",
-      "company": "Sigma",
-      "description": "Desenvolvimento em Java. Aprendi sobre persistência e o valor do aprendizado contínuo."
-    },
-    {
-      "year": "2019",
-      "title": "Instrutor de Robótica",
-      "company": "Robottime",
-      "description": "Trabalhei com LEGO EV3 e Arduino, além de desenvolvimento web."
-    }
-  ]
-  
+  {
+    "startMonth": "Jan",
+    "startYear": "2023",
+    "endMonth": "Presente",
+    "endYear": "",
+    "title": "Líder Técnico",
+    "company": "Alares Internet",
+    "description": "Responsável por liderar a equipe de desenvolvimento e garantir a entrega de soluções tecnológicas eficazes."
+  },
+  {
+    "startMonth": "Jan",
+    "startYear": "2022",
+    "endMonth": "Dez",
+    "endYear": "2022",
+    "title": "Desenvolvedor e Líder Técnico",
+    "company": "Webby Internet",
+    "description": "Desenvolvimento backend e liderança técnica de projetos, com foco em soluções escaláveis."
+  },
+  {
+    "startMonth": "Jan",
+    "startYear": "2021",
+    "endMonth": "Dez",
+    "endYear": "2021",
+    "title": "Desenvolvedor",
+    "company": "Webby Internet",
+    "description": "Atuei no desenvolvimento de sistemas internos, focando na melhoria contínua dos processos."
+  },
+  {
+    "startMonth": "Jul",
+    "startYear": "2021",
+    "endMonth": "Dez",
+    "endYear": "2021",
+    "title": "Estágio em Análise de Dados",
+    "company": "Webby Internet",
+    "description": "Apoio na análise de dados e desenvolvimento de relatórios gerenciais para a tomada de decisões."
+  },
+  {
+    "startMonth": "Out",
+    "startYear": "2019",
+    "endMonth": "Jun",
+    "endYear": "2020",
+    "title": "Instrutor de Robótica",
+    "company": "Robottime",
+    "description": "Instrutor de robótica para crianças e adolescentes, utilizando LEGO EV3 e Arduino."
+  },
+  {
+    "startMonth": "Jan",
+    "startYear": "2017",
+    "endMonth": "Ago",
+    "endYear": "2017",
+    "title": "Desenvolvedor Java",
+    "company": "Sigma",
+    "description": "Estágio em Desenvolvimento em Java. Aprendi sobre persistência e o valor do aprendizado contínuo."
+  },
+  {
+    "startMonth": "Jan",
+    "startYear": "2016",
+    "endMonth": "Dez",
+    "endYear": "2016",
+    "title": "Estágio em Help Desk",
+    "company": "MSI",
+    "description": "Trabalho em suporte ao cliente e desenvolvimento em Delphi."
+  }
+]

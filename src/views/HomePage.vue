@@ -16,12 +16,16 @@
     <!-- Adicionando a Timeline Profissional -->
     <div class="text-left wmax-w-xl mt-16">
       <h2 class="text-3xl font-bold mb-4">Experiência Profissional</h2>
-      <div v-if="latestProfessional && latestProfessional.length > 0" class="timeline">
+      <div v-if="latestProfessional.length > 0" class="timeline">
         <div v-for="(item, index) in latestProfessional" :key="index" class="timeline-item">
           <div class="timeline-content">
-            <h2 class="text-2xl font-bold">{{ item.year }}</h2>
-            <h3 class="text-xl">{{ item.title }}</h3>
-            <p class="text-sm text-gray-600">{{ item.company }}</p>
+            <h2 class="text-2xl font-bold">{{ item.title }}</h2>
+            <p class="text-lg">{{ item.company }}</p>
+            <p class="text-sm text-gray-600">
+              {{ item.startMonth }} {{ item.startYear }} - 
+              <span v-if="item.endYear">{{ item.endMonth }} {{ item.endYear }}</span>
+              <span v-else>{{ item.endMonth }}</span>
+            </p>
             <p class="text-lg">{{ item.description }}</p>
           </div>
         </div>
@@ -50,11 +54,30 @@ export default {
     };
   },
   computed: {
-    displayedProjects() {
-      return this.projects.slice(0, 3);
+    sortedProfessional() {
+      // Ordena do mais recente para o mais antigo
+      return this.professional.slice().sort((a, b) => {
+        const dateA = new Date(`${a.startYear}-${this.monthToNumber(a.startMonth)}`);
+        const dateB = new Date(`${b.startYear}-${this.monthToNumber(b.startMonth)}`);
+        return dateB - dateA;
+      });
     },
     latestProfessional() {
-      return this.professional.slice(-3).reverse(); // Exibir as 3 últimas experiências
+      // Retorna as três experiências mais recentes
+      return this.sortedProfessional.slice(0, 3);
+    },
+    displayedProjects() {
+      return this.projects.slice(0, 3);
+    }
+  },
+  methods: {
+    monthToNumber(month) {
+      const months = {
+        Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+        Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
+        Presente: 12 // Para ordenação, "Presente" deve ser tratado como o mais recente
+      };
+      return months[month] || 0;
     }
   },
   title: 'Caio Dias'
