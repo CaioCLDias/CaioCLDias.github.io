@@ -1,23 +1,103 @@
 <template>
-  <div class="about-page bg-black text-white min-h-screen flex flex-col items-center justify-center">
-    <h1 class="text-5xl font-bold mb-4">Em Construção</h1>
-    <div class="flex flex-col items-center mt-12">
-      <img src="../assets/images/gear.png" alt="Engrenagem" class="w-24 h-24 mb-4">
+  <div class="about-page container mx-auto p-4 max-w-3xl">
+    <h1 class="text-4xl font-bold mb-8">Sobre Mim</h1>
+    <div v-if="text">
+      <div class="text-lg" v-html="text"></div>
+    </div>
+    <div v-else>
+      <p>Carregando informações...</p>
+    </div>
+
+    <!-- Timeline de Experiências Profissionais -->
+    <h1 class="text-4xl font-bold mb-8 mt-12">Experiência</h1>
+    <div v-if="professional.length > 0" class="timeline">
+      <div v-for="(item, index) in professional" :key="index" class="timeline-item">
+        <div class="timeline-content">
+          <h2 class="text-2xl font-bold">{{ item.title }}</h2>
+          <p class="text-lg">{{ item.company }}</p>
+          <p class="text-sm text-gray-600">
+            {{ item.startMonth }} {{ item.startYear }} - 
+            <span v-if="item.endYear">{{ item.endMonth }} {{ item.endYear }}</span>
+            <span v-else>{{ item.endMonth }}</span>
+          </p>
+          <p class="text-lg">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline de Experiências Acadêmicas -->
+    <h1 class="text-4xl font-bold mb-8 mt-12">Educação</h1>
+    <div v-if="academic.length > 0" class="timeline">
+      <div v-for="(item, index) in academic" :key="index" class="timeline-item">
+        <div class="timeline-content">
+          <h2 class="text-2xl font-bold">{{ item.title }}</h2>
+          <p class="text-lg">{{ item.institution }}</p>
+          <p class="text-sm text-gray-600">
+            {{ item.startMonth }} {{ item.startYear }} - 
+            <span v-if="item.endYear">{{ item.endMonth }} {{ item.endYear }}</span>
+            <span v-else>{{ item.endMonth }}</span>
+          </p>
+          <p class="text-lg">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div v-else>
+      <p>Carregando informações...</p>
     </div>
   </div>
 </template>
 
 <script>
+import aboutData from '../assets/data/about.json';
+import professionalData from '../assets/data/professional.json';
+import academicData from '../assets/data/academic.json';
+
 export default {
   name: 'AboutPage',
-  title: 'Caio Dias | About'
+  data() {
+    return {
+      text: aboutData.text,
+      professional: professionalData,
+      academic: academicData
+    };
+  }
 }
 </script>
 
 <style scoped>
 .about-page {
-  background-color: #1a1a1a;
-  text-align: center;
-  padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border-left: 2px solid #3498db;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  margin-left: 30px;
+}
+
+h2 {
+  color: #3498db;
 }
 </style>

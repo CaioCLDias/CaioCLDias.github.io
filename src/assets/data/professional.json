@@ -1,0 +1,63 @@
+[
+  {
+    "startMonth": "Dez",
+    "startYear": "2023",
+    "endMonth": "Presente",
+    "endYear": "",
+    "title": "Tech Lead",
+    "company": "Alares Internet",
+    "description": "Responsável pela liderança técnica das áreas de atendimento, experiência do cliente e comunicação. Criação e aprovação de fluxos de atendimento para chat e URA, resultando em uma melhoria de 15% no tempo médio de atendimento. Reuniões frequentes com fornecedores para discutir os requisitos dos projetos, garantindo alinhamento com as expectativas do negócio. Elaboração detalhada do fluxo de trabalho, cronograma e entrega de cada projeto. Gerenciamento e mentoria de uma equipe técnica de 4 membros, promovendo um ambiente colaborativo e focado em resultados. Desenvolvimento backend utilizando PHP e Node.js, com práticas de CI/CD para garantir a entrega contínua de valor.",
+    "summary": "Lider técnico de um time de desenvolvimento nas áreas de atendimento e comunicação da empresa, focado em automação e melhorias operacionais."
+  },
+  {
+    "startMonth": "Fev",
+    "startYear": "2023",
+    "endMonth": "Dez",
+    "endYear": "2023",
+    "title": "Tech Lead e Desenvolvedor Backend",
+    "company": "Webby Internet",
+    "description": "Liderança de uma equipe de 3 desenvolvedores e responsabilidade pelo desenvolvimento e manutenção de aplicações críticas para a empresa. Coordenação de reuniões com stakeholders para definir as prioridades dos projetos, garantindo a entrega dentro dos prazos estabelecidos. Desenvolvimento e entrega de dois projetos do zero: Nimbus (gerenciamento de equipamentos de redes), Inside (gestão interna). Manutenção de um sistema de CRM interno para provedores de internet, incluindo a integração com agências de crédito, o que resultou em uma redução significativa no churn e um impacto positivo no FPD (First Payment Default), melhorando a retenção de clientes e a saúde financeira da empresa."
+    ,
+     "summary": "Liderança de uma equipe e desenvolvimento desenvolvimento de novos projetos, além de manutenção de CRM com impacto direto no churn e FPD."
+  },
+  {
+    "startMonth": "Ago",
+    "startYear": "2021",
+    "endMonth": "Jan",
+    "endYear": "2023",
+    "title": "Desenvolvedor Full Stack",
+    "company": "Webby Internet",
+    "description": "Desenvolvimento de um CRM integrado, unificando canais de vendas, utilizando PHP com Laravel no backend, Angular no frontend e Ionic para mobile. Contribuição para a criação de funcionalidades que melhoraram a experiência do usuário. Desenvolvimento de um sistema para compartilhamento seguro de dashboards do Power BI, com links públicos, resultando em economia com licenças do Power BI e maior segurança no compartilhamento de dashboards.",
+    "summary": "Desenvolvimento de um CRM integrado e um sistema de compartilhamento seguro de dashboards do Power BI, trazendo eficiência operacional e segurança."
+  },
+  {
+    "startMonth": "Abr",
+    "startYear": "2021",
+    "endMonth": "Jul",
+    "endYear": "2021",
+    "title": "Estagiário em Análise de Dados",
+    "company": "Webby Internet",
+    "description": "Responsável por tarefas de tratamento de dados e automação de processos. Geração de relatórios com Python e bibliotecas como Pandas e NumPy, além de criação de scripts automatizados para extração de dados.",
+    "summary": "Automatização de processos e geração de relatórios com Python."
+  },
+  {
+    "startMonth": "Jan",
+    "startYear": "2017",
+    "endMonth": "Ago",
+    "endYear": "2017",
+    "title": "Desenvolvedor Java",
+    "company": "Sigma Dataserv Informática S/A",
+    "description": "Atuação no desenvolvimento e manutenção de sistemas utilizando a linguagem Java, com foco em automação e gestão de processos, seguindo a arquitetura MVC. Desenvolvimento de soluções para o sistema ERP da empresa, com ênfase na automação de processos administrativos e financeiros. Participação no desenvolvimento de um sistema de gestão escolar, utilizando Struts e JSP, seguindo a arquitetura MVC para garantir uma estrutura modular e manutenível. Desenvolvimento de um sistema de gestão de presidiários para o estado do Paraná, utilizando JSF (JavaServer Faces), integrando dados para otimizar a administração do sistema penitenciário.",
+    "summary": "Desenvolvimento de soluções ERP e sistemas de gestão escolar e penitenciário em Java."
+  },
+  {
+    "startMonth": "Ago",
+    "startYear": "2016",
+    "endMonth": "Dez",
+    "endYear": "2016",
+    "title": "Suporte de Sistema",
+    "company": "MSI Soluções",
+    "description": "Atuação no suporte técnico de sistemas, fornecendo assistência para clientes internos e externos. Resolução de problemas técnicos em sistemas de gerenciamento, garantindo o mínimo de tempo de inatividade e assegurando a continuidade dos processos operacionais. Atendimento de demandas de suporte via telefone e e-mail, oferecendo soluções rápidas e eficientes. Documentação de procedimentos e criação de relatórios sobre incidentes recorrentes para melhorar a eficiência do suporte técnico.",
+    "summary": "Suporte técnico de sistemas, garantindo a continuidade operacional e resolução de problemas."
+  }
+]
