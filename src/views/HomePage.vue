@@ -1,7 +1,7 @@
 <template>
   <div class="home-page bg-black text-white min-h-screen flex flex-col items-center pt-20">
     <!-- Seção de Apresentação -->
-    <div class="flex items-center justify-between max-w-5xl w-full mx-auto">
+    <div class="presentation-container flex items-center justify-between max-w-5xl w-full mx-auto">
       <div class="text-left">
         <h1 class="text-5xl font-bold mb-4">Caio Dias</h1>
         <p class="text-xl mb-8">{{ summary }}</p>
@@ -92,11 +92,11 @@ export default {
 }
 
 .max-w-5xl {
-  max-width: 50rem; /* Ajustar o tamanho máximo da seção */
+  max-width: 50rem;
 }
 
 .text-left {
-  margin-right: auto; /* Para garantir o alinhamento à esquerda */
+  margin-right: auto;
 }
 
 .timeline {
@@ -144,6 +144,19 @@ h2 {
 @media (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Para dispositivos menores */
+@media (max-width: 768px) {
+  .presentation-container {
+    flex-direction: column; /* Muda o layout para coluna em dispositivos menores */
+    align-items: center;
+  }
+
+  .presentation-container img {
+    margin-left: 0;
+    margin-top: 20px; /* Coloca a imagem abaixo do texto */
   }
 }
 </style>
