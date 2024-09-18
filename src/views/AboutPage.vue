@@ -2,14 +2,14 @@
   <div class="about-page container mx-auto p-4 max-w-3xl">
     <h1 class="text-4xl font-bold mb-8">Sobre Mim</h1>
     <div v-if="text">
-      <p class="text-lg">{{ text }}</p>
+      <div class="text-lg" v-html="text"></div>
     </div>
     <div v-else>
       <p>Carregando informações...</p>
     </div>
 
     <!-- Timeline de Experiências Profissionais -->
-    <h1 class="text-4xl font-bold mb-8 mt-12">Minha Trajetória Profissional</h1>
+    <h1 class="text-4xl font-bold mb-8 mt-12">Experiência</h1>
     <div v-if="professional.length > 0" class="timeline">
       <div v-for="(item, index) in professional" :key="index" class="timeline-item">
         <div class="timeline-content">
@@ -26,7 +26,7 @@
     </div>
 
     <!-- Timeline de Experiências Acadêmicas -->
-    <h1 class="text-4xl font-bold mb-8 mt-12">Minha Trajetória Acadêmica</h1>
+    <h1 class="text-4xl font-bold mb-8 mt-12">Educação</h1>
     <div v-if="academic.length > 0" class="timeline">
       <div v-for="(item, index) in academic" :key="index" class="timeline-item">
         <div class="timeline-content">

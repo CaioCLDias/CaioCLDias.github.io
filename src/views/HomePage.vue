@@ -1,32 +1,36 @@
 <template>
   <div class="home-page bg-black text-white min-h-screen flex flex-col items-center pt-20">
-    <div class="text-center mt-12 flex items-center justify-center">
-      <div class="text-left max-w-xl">
-        <h1 class="text-5xl font-bold mb-4">Oi! Eu sou o Caio</h1>
+    <!-- Seção de Apresentação -->
+    <div class="flex items-center justify-between max-w-5xl w-full mx-auto">
+      <div class="text-left">
+        <h1 class="text-5xl font-bold mb-4">Caio Dias</h1>
         <p class="text-xl mb-8">{{ summary }}</p>
       </div>
       <img src="../assets/images/avatar.png" alt="Avatar" class="w-60 h-60 rounded-full ml-8">
     </div>
-    <div class="text-left wmax-w-xl">
+
+    <!-- Seção de Projetos -->
+    <div class="text-left max-w-5xl w-full mx-auto mt-12">
       <h2 class="text-3xl font-bold mb-4">Projetos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectCard v-for="(project, index) in displayedProjects" :key="index" :project="project" />
       </div>
     </div>
-    <!-- Adicionando a Timeline Profissional -->
-    <div class="text-left wmax-w-xl mt-16">
-      <h2 class="text-3xl font-bold mb-4">Experiência Profissional</h2>
+
+    <!-- Seção de Experiência Profissional -->
+    <div class="text-left max-w-5xl w-full mx-auto mt-16">
+      <h2 class="text-3xl font-bold mb-4">Experiência</h2>
       <div v-if="latestProfessional.length > 0" class="timeline">
         <div v-for="(item, index) in latestProfessional" :key="index" class="timeline-item">
           <div class="timeline-content">
             <h2 class="text-2xl font-bold">{{ item.title }}</h2>
             <p class="text-lg">{{ item.company }}</p>
             <p class="text-sm text-gray-600">
-              {{ item.startMonth }} {{ item.startYear }} - 
+              {{ item.startMonth }} {{ item.startYear }} -
               <span v-if="item.endYear">{{ item.endMonth }} {{ item.endYear }}</span>
               <span v-else>{{ item.endMonth }}</span>
             </p>
-            <p class="text-lg">{{ item.description }}</p>
+            <p class="text-lg">{{ item.summary }}</p>
           </div>
         </div>
       </div>
@@ -50,12 +54,11 @@ export default {
     return {
       projects: projectsData,
       summary: aboutData.summary,
-      professional: professionalData || [] // Garantir que 'professional' não seja undefined
+      professional: professionalData || []
     };
   },
   computed: {
     sortedProfessional() {
-      // Ordena do mais recente para o mais antigo
       return this.professional.slice().sort((a, b) => {
         const dateA = new Date(`${a.startYear}-${this.monthToNumber(a.startMonth)}`);
         const dateB = new Date(`${b.startYear}-${this.monthToNumber(b.startMonth)}`);
@@ -63,7 +66,6 @@ export default {
       });
     },
     latestProfessional() {
-      // Retorna as três experiências mais recentes
       return this.sortedProfessional.slice(0, 3);
     },
     displayedProjects() {
@@ -75,7 +77,7 @@ export default {
       const months = {
         Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
         Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
-        Presente: 12 // Para ordenação, "Presente" deve ser tratado como o mais recente
+        Presente: 12
       };
       return months[month] || 0;
     }
@@ -89,8 +91,12 @@ export default {
   background-color: #1a1a1a;
 }
 
-.text-left.max-w-xl {
-  max-width: 40rem; 
+.max-w-5xl {
+  max-width: 50rem; /* Ajustar o tamanho máximo da seção */
+}
+
+.text-left {
+  margin-right: auto; /* Para garantir o alinhamento à esquerda */
 }
 
 .timeline {
@@ -117,10 +123,27 @@ export default {
 }
 
 .timeline-content {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 h2 {
   color: #3498db;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>
