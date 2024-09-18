@@ -2,13 +2,31 @@
     {
       "name": "PDV",
       "description": "CRM focado para provedoras de internet",
-      "url": "",
+      "url": "https://pdv.webbytecnologia.com.br",
       "type": "work"
     },
     {
       "name": "Nimbus",
       "description": "Gerenciar servidores, equipamento de redes",
-      "url": "https://nimbus.webby.app.br/auth/login",
+      "url": "https://nimbus.webby.app.br",
+      "type": "work"
+    },
+    {
+      "name": "Inside",
+      "description": "Sistema para gestão de processos internos",
+      "url": "https://inside.webbytecnologia.com.br",
+      "type": "work"
+    },
+    {
+      "name": "Help",
+      "description": "Sistema de euxilio ao atendimento ao cliente",
+      "url": "https://csc.webbytecnologia.com.br",
+      "type": "work"
+    },
+    {
+      "name": "Webby View",
+      "description": "Sistema de compartilhamento seguro de dahs com link publico no power BI",
+      "url": "https://view.webbytecnologia.com.br",
       "type": "work"
     },
     {
