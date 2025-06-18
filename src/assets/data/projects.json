@@ -3,7 +3,7 @@
     "name": "Olla Chat",
     "description": "Plataforma de chat com integração com LLMs.",
     "url": "https://olla-app-test.ccldias.com/api/documentation",
-    "repository": "https://github.com/CaioCLDias/olla-chat-test",
+    "repository": "https://github.com/CaioCLDias/ollama-chat-test",
     "type": "personal",
     "details": "Sistema de chat com backend em Laravel e integração com modelos LLM para resposta automática. Possui agendamento de exclusão de conta, recuperação de histórico e autenticação baseada em tokens."
   },
