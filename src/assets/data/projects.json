@@ -1,63 +1,82 @@
 [
+  {
+    "name": "Olla Chat",
+    "description": "Plataforma de chat com integração com LLMs.",
+    "url": "https://olla-app-test.ccldias.com/api/documentation",
+    "repository": "https://github.com/CaioCLDias/olla-chat-test",
+    "type": "personal",
+    "details": "Sistema de chat com backend em Laravel e integração com modelos LLM para resposta automática. Possui agendamento de exclusão de conta, recuperação de histórico e autenticação baseada em tokens."
+  },
+  {
+    "name": "E-commerce Microservices",
+    "description": "Sistema de e-commerce baseado em microsserviços.",
+    "url": "",
+    "repository": "https://github.com/CaioCLDias/ecommerce-services",
+    "type": "personal",
+    "details": "Arquitetura com serviços independentes (Catálogo, Carrinho, Pagamento, Envio e Notificações), comunicação por RabbitMQ/Kafka, usando Laravel e Node.js. Foco em escalabilidade e resiliência."
+  },
     {
-      "name": "PDV",
-      "description": "CRM focado para provedoras de internet",
-      "url": "https://pdv.webbytecnologia.com.br",
-      "type": "work"
-    },
-    {
-      "name": "Nimbus",
-      "description": "Gerenciar servidores, equipamento de redes",
-      "url": "https://nimbus.webby.app.br",
-      "type": "work"
-    },
-    {
-      "name": "Inside",
-      "description": "Sistema para gestão de processos internos",
-      "url": "https://inside.webbytecnologia.com.br",
-      "type": "work"
-    },
-    {
-      "name": "Help",
-      "description": "Sistema de euxilio ao atendimento ao cliente",
-      "url": "https://csc.webbytecnologia.com.br",
-      "type": "work"
-    },
-    {
-      "name": "Webby View",
-      "description": "Sistema de compartilhamento seguro de dahs com link publico no power BI",
-      "url": "https://view.webbytecnologia.com.br",
-      "type": "work"
-    },
-    {
-      "name": "Auth Service",
-      "description": "Microserviço para autenticações e autorizações no sistema, publica eventos de login no RabbitMQ, permitindo que outros serviços do ecossistema possam consumir a esses eventos.",
-      "url": "https://github.com/CaioCLDias/auth-service",
-      "type": "personal"
-    },
-    {
-      "name": "Notification Service",
-      "description": "Microserviço dedicado ao envio de notificações. Ele consome eventos publicados no RabbitMQ e envia notificações apropriadas",
-      "url": "https://github.com/CaioCLDias/notification-service",
-      "type": "personal"
-    },
-    {
-      "name": "Laravel Spatie Permissions",
-      "description": "Projeto criado com a finalidade de exemplificar um sistema de permissionameto utilizando a biblioteca da Spatie",
-      "url": "https://github.com/CaioCLDias/laravel-spatie-permissions",
-      "type": "personal"
-    },
-    {
-      "name": "Kafka",
-      "description": "Projeto realizado no curso de Kafka da Alura",
-      "url": "https://github.com/CaioCLDias/kafika-alura",
-      "type": "personal"
-    },
-    {
-      "name": "Conexão SSH Tunel",
-      "description": "Script em python para realizar conexão com banco utilizando um tunel SSH",
-      "url": "https://github.com/CaioCLDias/ssh_thunel",
-      "type": "personal"
-    }
-  ]
-  
+    "name": "Elos",
+    "description": "Sistema de roteirização e decisão de atendimento (anteriormente Radat).",
+    "url": "https://elos.alaresinternet.com.br",
+    "repository": "",
+    "type": "work",
+    "details": "Plataforma desenvolvida para otimizar o atendimento técnico da empresa, roteirizando visitas com base em regras de negócio, localização geográfica e capacidade de atendimento."
+  },
+  {
+    "name": "ASP",
+    "description": "CRM B2B com foco em relacionamento e vendas para clientes corporativos.",
+    "url": "https://asp.alaresinternet.com.br/",
+    "repository": "",
+    "type": "work",
+    "details": "Sistema complexo voltado ao ciclo completo de vendas B2B, incluindo geração de leads, agendamento de visitas, histórico de relacionamento e relatórios customizados por hierarquia de usuário."
+  },
+  {
+    "name": "Jornada de Comunicação",
+    "description": "Sistema de gestão de fluxos de comunicação com clientes.",
+    "url": "",
+    "repository": "",
+    "type": "work",
+    "details": "Gerencia o fluxo de mensagens e interações com clientes por múltiplos canais. Desenvolvido com Laravel e RabbitMQ, prioriza a entrega assíncrona e escalável das mensagens, com logs e rastreabilidade total."
+  },
+  {
+    "name": "PDV",
+    "description": "CRM focado para provedoras de internet.",
+    "url": "https://pdv.webbytecnologia.com.br",
+    "repository": "",
+    "type": "work",
+    "details": "Sistema CRM robusto desenvolvido com Laravel e Angular, focado na gestão de vendas e atendimento de provedores de internet. Inclui módulo financeiro, integração com agências de crédito e automação de contratos digitais."
+  },
+  {
+    "name": "Nimbus",
+    "description": "Gerenciar servidores e equipamentos de rede.",
+    "url": "https://nimbus.webby.app.br",
+    "repository": "",
+    "type": "work",
+    "details": "Sistema para documentação e controle de equipamentos de rede, com registro automatizado de ativos e funcionalidades para liberação de IPs em servidores de e-mail. Backend em Laravel com Redis para filas de execução."
+  },
+  {
+    "name": "Inside",
+    "description": "Sistema para gestão de processos internos.",
+    "url": "https://inside.webbytecnologia.com.br",
+    "repository": "",
+    "type": "work",
+    "details": "Plataforma interna voltada à gestão de contratos, salas e jornada do cliente. Criada para centralizar fluxos administrativos da empresa com interface clara e intuitiva."
+  },
+  {
+    "name": "Help",
+    "description": "Sistema de auxílio ao atendimento ao cliente.",
+    "url": "https://csc.webbytecnologia.com.br",
+    "repository": "",
+    "type": "work",
+    "details": "Fila de ajuda com sistema de priorização e alertas de chamados críticos. Utiliza PHP/Laravel com Redis e workers para priorização automática e alertas baseados em tempo de espera."
+  },
+  {
+    "name": "Webby View",
+    "description": "Compartilhamento seguro de dashboards do Power BI.",
+    "url": "https://view.webbytecnologia.com.br",
+    "repository": "",
+    "type": "work",
+    "details": "Sistema seguro de compartilhamento de dashboards Power BI via links públicos, eliminando a necessidade de licenças adicionais. Reforça a segurança e amplia o acesso de forma controlada."
+  }
+]

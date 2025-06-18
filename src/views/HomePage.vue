@@ -13,7 +13,12 @@
     <div class="text-left max-w-5xl w-full mx-auto mt-12">
       <h2 class="text-3xl font-bold mb-4">Projetos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <ProjectCard v-for="(project, index) in displayedProjects" :key="index" :project="project" />
+        <ProjectCard
+          v-for="(project, index) in displayedProjects"
+          :key="index"
+          :project="project"
+          @show-details="selectedProject = project"
+        />
       </div>
     </div>
 
@@ -36,11 +41,19 @@
       </div>
       <router-link to="/about" class="text-blue-500 hover:underline mt-4 inline-block">Ver mais</router-link>
     </div>
+
+    <!-- Modal -->
+    <ProjectDetailsModal
+      v-if="selectedProject"
+      :project="selectedProject"
+      @close="selectedProject = null"
+    />
   </div>
 </template>
 
 <script>
 import ProjectCard from '../components/ProjectCard.vue';
+import ProjectDetailsModal from '../components/ProjectDetailsModal.vue';
 import projectsData from '../assets/data/projects.json';
 import aboutData from '../assets/data/about.json';
 import professionalData from '../assets/data/professional.json';
@@ -48,13 +61,15 @@ import professionalData from '../assets/data/professional.json';
 export default {
   name: 'HomePage',
   components: {
-    ProjectCard
+    ProjectCard,
+    ProjectDetailsModal
   },
   data() {
     return {
       projects: projectsData,
       summary: aboutData.summary,
-      professional: professionalData || []
+      professional: professionalData || [],
+      selectedProject: null
     };
   },
   computed: {
@@ -150,13 +165,13 @@ h2 {
 /* Para dispositivos menores */
 @media (max-width: 768px) {
   .presentation-container {
-    flex-direction: column; /* Muda o layout para coluna em dispositivos menores */
+    flex-direction: column;
     align-items: center;
   }
 
   .presentation-container img {
     margin-left: 0;
-    margin-top: 20px; /* Coloca a imagem abaixo do texto */
+    margin-top: 20px;
   }
 }
 </style>

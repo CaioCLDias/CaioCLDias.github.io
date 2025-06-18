@@ -1,15 +1,19 @@
 <template>
   <div id="app" class="font-sans bg-black text-white min-h-screen flex flex-col">
-    <header class="fixed w-full z-10 flex justify-center mt-16">
-      <nav class="space-x-4 bg-transparent p-4">
+    <header class="fixed top-0 w-full z-50 bg-[#1a1a1a] border-b border-gray-700">
+      <nav class="flex justify-center space-x-4 p-4">
         <router-link to="/" class="nav-button" :class="{ 'bg-blue-600': $route.name === 'HomePage' }">Home</router-link>
-        <router-link to="/about" class="nav-button" :class="{ 'bg-blue-600': $route.name === 'AboutPage' }">Sobre</router-link>
-        <router-link to="/projects" class="nav-button" :class="{ 'bg-blue-600': $route.name === 'ProjectsPage' }">Projetos</router-link>
+        <router-link to="/about" class="nav-button"
+          :class="{ 'bg-blue-600': $route.name === 'AboutPage' }">Sobre</router-link>
+        <router-link to="/projects" class="nav-button"
+          :class="{ 'bg-blue-600': $route.name === 'ProjectsPage' }">Projetos</router-link>
       </nav>
     </header>
-    <main class="container mx-auto flex-grow p-4 mt-32">
-      <router-view/>
+
+    <main class="container mx-auto flex-grow p-4 mt-20">
+      <router-view />
     </main>
+
     <footer class="text-center p-4 mt-8">
       <div class="flex justify-center space-x-4 mb-4">
         <a href="https://www.linkedin.com/in/caio-cesar-lorenzon-dias/" target="_blank" rel="noopener noreferrer">
@@ -23,6 +27,7 @@
     </footer>
   </div>
 </template>
+
 
 <script>
 export default {

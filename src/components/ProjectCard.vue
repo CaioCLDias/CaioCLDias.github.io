@@ -1,11 +1,48 @@
 <template>
   <div class="project-card bg-gray-800 p-4 rounded-lg flex flex-col justify-between">
+    <!-- Título e descrição -->
     <div>
-      <h3 class="text-xl font-bold text-white mb-2">{{ project.name }}</h3>
-      <p class="text-sm text-gray-400 mb-4">{{ project.description }}</p>
-      <p class="text-gray-400 mb-4">{{ project.year }}</p>
+      <h3 class="text-xl font-bold text-white mb-2">
+        {{ project.name }}
+      </h3>
+      <p class="text-sm text-gray-400 mb-4">
+        {{ project.description }}
+      </p>
     </div>
-    <a :href="project.url" class="text-blue-400 hover:underline self-start">Visualizar</a>
+
+    <!-- Ações -->
+    <div class="flex flex-wrap items-center gap-4 mt-2">
+      <!-- Link do site/demo -->
+      <a
+        v-if="hasUrl"
+        :href="project.url"
+        target="_blank"
+        rel="noopener"
+        class="text-blue-400 hover:underline"
+      >
+        Site
+      </a>
+
+      <!-- Link do repositório -->
+      <a
+        v-if="hasRepo"
+        :href="project.repository"
+        target="_blank"
+        rel="noopener"
+        class="text-green-400 hover:underline"
+      >
+        Git
+      </a>
+
+      <!-- Botão Detalhes -->
+      <button
+        v-if="hasDetails"
+        @click="$emit('show-details', project)"
+        class="text-yellow-400 hover:underline"
+      >
+        Detalhes
+      </button>
+    </div>
   </div>
 </template>
 
@@ -15,9 +52,20 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
+  computed: {
+    hasUrl() {
+      return this.project.url && this.project.url.trim() !== '';
+    },
+    hasRepo() {
+      return this.project.repository && this.project.repository.trim() !== '';
+    },
+    hasDetails() {
+      return this.project.details && this.project.details.trim() !== '';
+    },
+  },
 };
 </script>
 
@@ -25,9 +73,8 @@ export default {
 .project-card {
   width: 100%;
   max-width: 300px;
-  height: 100%; /* Ensure the card takes full height */
 }
 .text-sm {
-  font-size: 0.875rem; /* Reduza o tamanho da fonte para o texto de descrição */
+  font-size: 0.875rem;
 }
 </style>
