@@ -15,14 +15,6 @@
     "type": "personal",
     "details": "Arquitetura com serviços independentes (Catálogo, Carrinho, Pagamento, Envio e Notificações), comunicação por RabbitMQ/Kafka, usando Laravel e Node.js. Foco em escalabilidade e resiliência."
   },
-    {
-    "name": "Elos",
-    "description": "Sistema de roteirização e decisão de atendimento (anteriormente Radat).",
-    "url": "https://elos.alaresinternet.com.br",
-    "repository": "",
-    "type": "work",
-    "details": "Plataforma desenvolvida para otimizar o atendimento técnico da empresa, roteirizando visitas com base em regras de negócio, localização geográfica e capacidade de atendimento."
-  },
   {
     "name": "ASP",
     "description": "CRM B2B com foco em relacionamento e vendas para clientes corporativos.",
@@ -30,6 +22,14 @@
     "repository": "",
     "type": "work",
     "details": "Sistema complexo voltado ao ciclo completo de vendas B2B, incluindo geração de leads, agendamento de visitas, histórico de relacionamento e relatórios customizados por hierarquia de usuário."
+  },
+  {
+    "name": "Elos",
+    "description": "Sistema de roteirização e decisão de atendimento (anteriormente Radat).",
+    "url": "https://elos.alaresinternet.com.br",
+    "repository": "",
+    "type": "work",
+    "details": "Plataforma desenvolvida para otimizar o atendimento técnico da empresa, roteirizando visitas com base em regras de negócio, localização geográfica e capacidade de atendimento."
   },
   {
     "name": "Jornada de Comunicação",
